@@ -1,0 +1,90 @@
+<html>
+<head>
+    <title>Profile</title>
+    <style>
+        body {
+            background-image: url('https://d3ncv2il1vdtm.cloudfront.net/image.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            color: #000;
+        }
+
+        input[type="text"] {
+            background-color: lightgray;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            margin-top: 10px;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th, td {
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div align="center">
+        <h1>Employee Information Portal</h1>
+        Employee ID:
+        <br>
+        <input type="text" name="employeeid" id="empid" style="background-color: lightgray;">
+        <br> First name:
+        <br>
+        <input type="text" name="firstname" id="fname" style="background-color: lightgray;">
+        <br> Last name:
+        <br>
+        <input type="text" name="lastname" id="lname" style="background-color: lightgray;">
+        <br> Employee Age:
+        <br>
+        <input type="text" name="empage" id="empage" style="background-color: lightgray;">
+        <br><br>
+        <input type="submit" id="saveprofile" value="Save Profile">
+        <br>
+        <p id="profileSaved"></p>
+        <br>
+        <input type="submit" id="getprofile" value="View all the Employee Profiles">
+        <br><br>
+        <div id="showProfile">
+            <table id="employeeProfile">
+                <colgroup>
+                    <col style="width:20%">
+                    <col style="width:20%">
+                    <col style="width:20%">
+                    <col style="width:20%">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th>Employee ID</th>
+                        <th>First name</th>
+                        <th>Last Name</th>
+                        <th>Employee Age</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+</body>
+</html>
